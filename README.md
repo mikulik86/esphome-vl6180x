@@ -22,6 +22,9 @@ at commit `89944f7`.
   logged too: `'Water Level' distance: 82 mm`, `'vl6180x_mug' distance: unknown`. Without a
   `name`, ESPHome uses the `id`; `name:` with `internal: true` gives a label without creating a
   Home Assistant entity.
+- **`log_distance`** (optional, default `true`): set it to `false` on a sensor to hide its
+  `distance: ...` debug lines. Its warnings and errors are still logged. To hide the debug lines
+  of all VL6180X at once, use `logger: logs: vl6180x: INFO` instead.
 
 ## Usage
 
