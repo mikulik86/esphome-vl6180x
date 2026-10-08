@@ -18,6 +18,10 @@ at commit `89944f7`.
   too close or too far, or too much ambient light now report the distance as unknown without
   setting the component's warning flag (which logged `set Warning flag` and made a status LED
   blink). Sensor system errors, I2C failures and timeouts still set it.
+- **Log lines name the sensor**, so several VL6180X can be told apart, and a missing distance is
+  logged too: `'Water Level' distance: 82 mm`, `'vl6180x_mug' distance: unknown`. Without a
+  `name`, ESPHome uses the `id`; `name:` with `internal: true` gives a label without creating a
+  Home Assistant entity.
 
 ## Usage
 
