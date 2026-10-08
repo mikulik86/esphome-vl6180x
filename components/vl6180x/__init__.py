@@ -1,0 +1,1 @@
+CODEOWNERS = ["@NonaSuomy", "@k-korn"]
